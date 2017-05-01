@@ -14,3 +14,5 @@ configSet("welcome", {
 });
 
 usePackage("editorconfig");
+
+usePackage("language-scala");
