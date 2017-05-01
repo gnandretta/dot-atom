@@ -1,6 +1,6 @@
 "use babel";
 
-import {configSet} from 'atom-use-package';
+import {configSet, usePackage} from 'atom-use-package';
 
 atom.config.set("core.themes", ["one-light-ui", "one-light-syntax"]);
 
@@ -12,3 +12,5 @@ configSet("core", {
 configSet("welcome", {
   showOnStartup: false
 });
+
+usePackage("editorconfig");
