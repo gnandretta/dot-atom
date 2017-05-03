@@ -9,6 +9,12 @@ configSet("core", {
   openEmptyEditorOnStart: false
 });
 
+configSet("tree-view", {
+  alwaysOpenExisting: true,
+  showOnRightSide: true,
+  squashDirectoryNames: true
+});
+
 configSet("welcome", {
   showOnStartup: false
 });
