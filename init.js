@@ -5,7 +5,7 @@ import {configSet, usePackage} from 'atom-use-package';
 atom.config.set("core.themes", ["one-light-ui", "one-light-syntax"]);
 
 configSet("core", {
-  disabledPackages: ["tabs"],
+  // disabledPackages: ["tabs"],
   openEmptyEditorOnStart: false
 });
 
