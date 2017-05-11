@@ -6,13 +6,12 @@ atom.config.set("core.themes", ["one-light-ui", "one-light-syntax"]);
 
 configSet("core", {
   // disabledPackages: ["tabs"],
+  allowPendingPaneItems: false,
   openEmptyEditorOnStart: false
 });
 
 configSet("tree-view", {
-  alwaysOpenExisting: true,
-  showOnRightSide: true,
-  squashDirectoryNames: true
+  showOnRightSide: true
 });
 
 configSet("welcome", {
