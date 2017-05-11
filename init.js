@@ -1,6 +1,7 @@
-"use babel";
+/** @babel */
 
-import {configSet, usePackage} from 'atom-use-package';
+import { configSet, usePackage } from "atom-use-package";
+import { start } from "./auto-global-mru";
 
 atom.config.set("core.themes", ["one-light-ui", "one-light-syntax"]);
 
