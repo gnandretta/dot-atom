@@ -4,6 +4,7 @@
 blob-store/
 compile-cache/
 config.cson
+github.cson
 node_modules/
 packages/
 storage/
