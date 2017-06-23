@@ -23,3 +23,5 @@ usePackage("editorconfig");
 
 usePackage("language-babel");
 usePackage("language-scala");
+
+start();
