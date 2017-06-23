@@ -6,7 +6,6 @@ import { start } from "./auto-global-mru";
 atom.config.set("core.themes", ["one-light-ui", "one-light-syntax"]);
 
 configSet("core", {
-  // disabledPackages: ["tabs"],
   allowPendingPaneItems: false,
   openEmptyEditorOnStart: false
 });
