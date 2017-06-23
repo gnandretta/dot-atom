@@ -32,7 +32,18 @@ const doMostRecent = (p, f) => {
   }
 };
 
+const getDocks = () => [
+  atom.workspace.getLeftDock(),
+  atom.workspace.getRightDock(),
+  atom.workspace.getBottomDock()
+];
+
+const isInDock = item =>
+  getDocks().some(dock => dock.getPaneItems().includes(item));
+
 const handleDidAddPaneItem = ({ item, pane }) => {
+  if (isInDock(item)) return;
+
   // When the item is added to the master pane, there's nothing to do.
   if (isM(pane)) return;
 
@@ -72,6 +83,8 @@ const handleDidAddPaneItem = ({ item, pane }) => {
 };
 
 const handleWillDestroyPaneItem = ({ item, pane }) => {
+  if (isInDock(item)) return;
+
   const m = getM();
   const mItemCount = getMItems().length;
 
