@@ -21,6 +21,7 @@ configSet("welcome", {
 usePackage("editorconfig");
 
 usePackage("language-babel");
+usePackage("prettier-atom");
 usePackage("language-scala");
 
 start();
