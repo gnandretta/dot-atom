@@ -3,8 +3,6 @@
 import { configSet, usePackage } from "atom-use-package";
 import { start } from "./auto-global-mru";
 
-atom.config.set("core.themes", ["one-light-ui", "one-light-syntax"]);
-
 configSet("core", {
   allowPendingPaneItems: false,
   openEmptyEditorOnStart: false
@@ -24,5 +22,24 @@ usePackage("editorconfig");
 usePackage("language-babel");
 usePackage("prettier-atom");
 usePackage("language-scala");
+
+const findNextTheme = (list, current) => {
+  const currentIndex = list.findIndex(
+    x => x[0] === current[0] && x[1] === current[1]
+  );
+  return list[(currentIndex + 1) % list.length];
+};
+
+const THEMES = [
+  ["one-light-ui", "one-light-syntax"],
+  ["one-dark-ui", "tone-syntax"]
+];
+
+atom.commands.add(".platform-darwin", "mine:cycle-themes", () => {
+  atom.config.set(
+    "core.themes",
+    findNextTheme(THEMES, atom.config.get("core.themes"))
+  );
+});
 
 start();
