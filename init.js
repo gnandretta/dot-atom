@@ -5,7 +5,9 @@ import { start } from "./auto-global-mru";
 
 configSet("core", {
   allowPendingPaneItems: false,
-  openEmptyEditorOnStart: false
+  closeDeletedFileTabs: true,
+  openEmptyEditorOnStart: false,
+  titleBar: "custom"
 });
 
 configSet("tree-view", {
