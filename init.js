@@ -10,6 +10,11 @@ configSet("core", {
   titleBar: "custom"
 });
 
+configSet("editor", {
+  atomicSoftTabs: false,
+  showInvisibles: true
+});
+
 configSet("tree-view", {
   showOnRightSide: true
 });
