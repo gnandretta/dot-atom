@@ -18,6 +18,7 @@ configSet("welcome", {
   showOnStartup: false
 });
 
+usePackage("tone-syntax");
 usePackage("editorconfig");
 
 usePackage("language-babel");
