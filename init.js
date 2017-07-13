@@ -26,9 +26,12 @@ configSet("welcome", {
 usePackage("tone-syntax");
 usePackage("editorconfig");
 
+usePackage("goto");
+
 usePackage("language-babel");
 usePackage("prettier-atom");
 usePackage("language-scala");
+usePackage("language-elm");
 
 const findNextTheme = (list, current) => {
   const currentIndex = list.findIndex(
