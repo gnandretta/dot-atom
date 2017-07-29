@@ -12,6 +12,7 @@ configSet("core", {
 
 configSet("editor", {
   atomicSoftTabs: false,
+  fontFamily: "Iosevka",
   showInvisibles: true
 });
 
