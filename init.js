@@ -13,7 +13,8 @@ configSet("core", {
 configSet("editor", {
   atomicSoftTabs: false,
   fontFamily: "Iosevka",
-  showInvisibles: true
+  showInvisibles: true,
+  showLineNumbers: false
 });
 
 configSet("tree-view", {
